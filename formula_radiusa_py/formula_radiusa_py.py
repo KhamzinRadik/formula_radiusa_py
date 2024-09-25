@@ -3,13 +3,14 @@ import math
 from tkinter import * 
 
 def add():  
+    #введенное число переводим в текст
     res = "{}".format(txt.get())
     res2="{}".format(txt2.get())
-
+    #переведенное число в текст принимаем, как за значение
     hait_stoika=float(res)
     diametr_trubi=float(res2)
    
-    
+    #вычисление радиуса гиба
     arcTG=float(math.atan(100/(60.1-hait_stoika))) * (180/math.pi)
     print (arcTG)
     a=float (180 - 2 * arcTG)
@@ -27,7 +28,7 @@ def add():
 
     
 
-
+    
 
 
 window = Tk()  
